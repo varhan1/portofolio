@@ -1,0 +1,1102 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Portfolio of Varhan Fiqih Naufaldy â€” Frontend Developer & Mobile Application Developer specializing in modern web and mobile experiences." />
+  <meta name="keywords"
+    content="Frontend Developer, Mobile Developer, Web Developer, Portfolio, Varhan Fiqih Naufaldy" />
+  <meta name="author" content="Varhan Fiqih Naufaldy" />
+  <meta name="theme-color" content="#0a0e1a" />
+
+  <title>Varhan Fiqih Naufaldy â€” Frontend & Mobile Developer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+
+<body>
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar" class="navbar" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" aria-label="Go to top">VARHAN</a>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+      <ul id="nav-menu" class="nav-menu" role="menubar">
+        <li role="none"><a href="#hero" class="nav-link active" role="menuitem">Home</a></li>
+        <li role="none"><a href="#about" class="nav-link" role="menuitem">About</a></li>
+        <li role="none"><a href="#skills" class="nav-link" role="menuitem">Skills</a></li>
+        <li role="none"><a href="#experience" class="nav-link" role="menuitem">Experience</a></li>
+        <li role="none"><a href="#projects" class="nav-link" role="menuitem">Projects</a></li>
+        <li role="none"><a href="#education" class="nav-link" role="menuitem">Education</a></li>
+        <li role="none"><a href="#gallery" class="nav-link" role="menuitem">Gallery</a></li>
+        <li role="none"><a href="#contact" class="nav-link" role="menuitem">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="hero" class="hero-section">
+    <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+    <!-- Decorative floating shapes -->
+    <div class="hero-shape hero-shape-1" aria-hidden="true"></div>
+    <div class="hero-shape hero-shape-2" aria-hidden="true"></div>
+
+    <div class="hero-wrapper">
+      <!-- LEFT: Text Content -->
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Available for opportunities
+        </div>
+        <h1 class="hero-name">
+          Varhan Fiqih<br />
+          <span class="hero-name-accent">Naufaldy</span>
+        </h1>
+        <div class="hero-title">
+          <span class="hero-title-prefix">&gt;&nbsp;</span>
+          <span id="typing-text" class="typing-text"></span>
+          <span class="typing-cursor">|</span>
+        </div>
+        <p class="hero-description">
+          Passionate about crafting seamless digital experiences through clean code,
+          intuitive interfaces, and modern technologies. Turning ideas into
+          impactful web and mobile applications.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary" id="btn-view-projects">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect width="7" height="7" x="3" y="3" rx="1" />
+              <rect width="7" height="7" x="14" y="3" rx="1" />
+              <rect width="7" height="7" x="14" y="14" rx="1" />
+              <rect width="7" height="7" x="3" y="14" rx="1" />
+            </svg>
+            View Projects
+          </a>
+          <a href="https://drive.google.com/file/d/1xXkbxCYpO1mQNXB70tOFWuvlQpGG7urE/view?usp=drive_link"
+            class="btn btn-outline" id="btn-download-cv" target="_blank" rel="noopener noreferrer">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" x2="12" y1="15" y2="3" />
+            </svg>
+            Download CV
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number" data-count="3">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number" data-count="10">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Tech Stack</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number" data-count="3.54" data-decimals="2">0</span>
+            <span class="stat-label">GPA / 4.00</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: Photo -->
+      <div class="hero-photo-container">
+        <div class="hero-photo-glow" aria-hidden="true"></div>
+        <div class="hero-photo-frame">
+          <img src="/images/bacgorund + jas hitam.png" alt="Varhan Fiqih Naufaldy â€” Frontend &amp; Mobile Developer"
+            class="hero-photo" loading="eager" />
+          <div class="hero-photo-overlay" aria-hidden="true"></div>
+        </div>
+        <!-- Floating badge on photo -->
+        <div class="photo-badge photo-badge-top">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="m18 16 4-4-4-4" />
+            <path d="m6 8-4 4 4 4" />
+            <path d="m14.5 4-5 16" />
+          </svg>
+          <span>Frontend Dev</span>
+        </div>
+        <div class="photo-badge photo-badge-bottom">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
+            <path d="M12 18h.01" />
+          </svg>
+          <span>Mobile Dev</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Introduction</span>
+        <h2 class="section-title">About Me</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid reveal">
+        <div class="about-text">
+          <p>
+            Saya merupakan lulusan baru Sistem Informasi dari Telkom University yang memiliki minat besar di bidang
+            teknologi, pengembangan sistem informasi, dan rekayasa perangkat lunak, khususnya pengembangan Front-End dan
+            Back-End. Saya memperoleh pengalaman praktis melalui kegiatan kerja praktik, dengan berkontribusi dalam
+            perancangan ulang dan pengembangan aplikasi Wargaku Surabaya V3 menggunakan Flutter. Saya juga memiliki
+            pengalaman dalam berbagai proyek pengembangan aplikasi, kegiatan organisasi, dan kepanitiaan. Saya menguasai
+            Microsoft Office serta memiliki motivasi tinggi untuk terus belajar, meningkatkan keterampilan teknis, dan
+            beradaptasi dengan lingkungan kerja yang baru.
+          </p>
+
+        </div>
+        <div class="about-highlights">
+          <div class="highlight-card">
+            <div class="highlight-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="m18 16 4-4-4-4" />
+                <path d="m6 8-4 4 4 4" />
+                <path d="m14.5 4-5 16" />
+              </svg>
+            </div>
+            <h3>Frontend Development</h3>
+            <p>Building responsive, interactive web interfaces with modern technologies.</p>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
+                <path d="M12 18h.01" />
+              </svg>
+            </div>
+            <h3>Mobile Development</h3>
+            <p>Creating cross-platform mobile applications using Flutter and React Native.</p>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+                <path d="M2 12h20" />
+              </svg>
+            </div>
+            <h3>Web Technologies</h3>
+            <p>Proficient in full-stack web development with focus on user experience.</p>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                <path d="M8 21h8" />
+                <path d="M12 17v4" />
+                <path d="M7 8h2l2 5 2-5h2" />
+              </svg>
+            </div>
+            <h3>Microsoft Office</h3>
+            <p>Mahir menggunakan Microsoft Office (Word, Excel, PowerPoint) untuk kebutuhan administrasi dan presentasi
+              profesional.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Expertise</span>
+        <h2 class="section-title">Skills & Tools</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-grid reveal">
+        <!-- Languages & Frameworks -->
+        <div class="skill-category">
+          <h3 class="skill-category-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <polyline points="16 18 22 12 16 6" />
+              <polyline points="8 6 2 12 8 18" />
+            </svg>
+            Languages & Frameworks
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag" data-level="advanced">HTML</span>
+            <span class="skill-tag" data-level="advanced">CSS</span>
+            <span class="skill-tag" data-level="advanced">JavaScript</span>
+            <span class="skill-tag" data-level="advanced">Flutter</span>
+            <span class="skill-tag" data-level="intermediate">Laravel</span>
+          </div>
+        </div>
+        <!-- Tools & Platforms -->
+        <div class="skill-category">
+          <h3 class="skill-category-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path
+                d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+            </svg>
+            Tools & Platforms
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag" data-level="advanced">Git</span>
+            <span class="skill-tag" data-level="advanced">GitHub</span>
+            <span class="skill-tag" data-level="advanced">VS Code</span>
+            <span class="skill-tag" data-level="advanced">Android Studio</span>
+            <span class="skill-tag" data-level="advanced">Microsoft Office</span>
+            <span class="skill-tag" data-level="advanced">Canva</span>
+            <span class="skill-tag" data-level="advanced">Draw.IO</span>
+          </div>
+        </div>
+        <!-- Soft Skills -->
+        <div class="skill-category">
+          <h3 class="skill-category-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+              <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+            </svg>
+            Core Strengths
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag" data-level="soft">Problem-Solving</span>
+            <span class="skill-tag" data-level="soft">Teamwork &amp; Collaboration</span>
+            <span class="skill-tag" data-level="soft">Effective Communication</span>
+            <span class="skill-tag" data-level="soft">Adaptability</span>
+            <span class="skill-tag" data-level="soft">Time Management</span>
+            <span class="skill-tag" data-level="soft">Initiative</span>
+            <span class="skill-tag" data-level="soft">Planning &amp; Organizing</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE SECTION ===== -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Career</span>
+        <h2 class="section-title">Experience</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="timeline reveal">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Magang (KP)</h3>
+              <span class="timeline-date">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" class="timeline-icon">
+                  <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
+                  <line x1="16" x2="16" y1="2" y2="6" />
+                  <line x1="8" x2="8" y1="2" y2="6" />
+                  <line x1="3" x2="21" y1="10" y2="10" />
+                </svg>
+                Practical Work Period
+              </span>
+            </div>
+            <p class="timeline-org">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" class="timeline-icon">
+                <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z" />
+                <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2" />
+                <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2" />
+                <path d="M10 6h4" />
+                <path d="M10 10h4" />
+                <path d="M10 14h4" />
+                <path d="M10 18h4" />
+              </svg>
+              Dinas Komunikasi dan Informatika Kota Surabaya
+            </p>
+            <p class="timeline-desc">
+              Contributed to the development of <strong>Wargaku Surabaya V3</strong>,
+              a public service application for the city of Surabaya.
+              Worked on frontend features to improve citizen-government interaction
+              and service accessibility.
+            </p>
+            <div class="timeline-tags">
+              <span class="mini-tag">Flutter</span>
+              <span class="mini-tag">Mobile Dev</span>
+              <span class="mini-tag">Public Service</span>
+            </div>
+            <a href="https://drive.google.com/file/d/1eExDdFDijTZ70VsXLncMBOHDXUAj_7nC/view?usp=drive_link"
+              class="timeline-link" target="_blank" rel="noopener noreferrer" id="exp-link-internship">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                <polyline points="15 3 21 3 21 9" />
+                <line x1="10" x2="21" y1="14" y2="3" />
+              </svg>
+              Lihat Sertifikat
+            </a>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Laboratory Assistant</h3>
+              <span class="timeline-date">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" class="timeline-icon">
+                  <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
+                  <line x1="16" x2="16" y1="2" y2="6" />
+                  <line x1="8" x2="8" y1="2" y2="6" />
+                  <line x1="3" x2="21" y1="10" y2="10" />
+                </svg>
+                Academic Period
+              </span>
+            </div>
+            <p class="timeline-org">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" class="timeline-icon">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                <path d="M6 12v5c3 3 8 3 12 0v-5" />
+              </svg>
+              Telkom University Surabaya Mobile Application Development
+            </p>
+            <p class="timeline-desc">
+              Assisted in teaching and guiding students in mobile application
+              development courses. Helped students understand concepts such as
+              UI development, state management, and app architecture.
+            </p>
+            <div class="timeline-tags">
+              <span class="mini-tag">Teaching</span>
+              <span class="mini-tag">Mobile Dev</span>
+              <span class="mini-tag">Mentoring</span>
+            </div>
+            <a href="https://drive.google.com/file/d/1KQ_hXhxRFuXEBvxbkvNNeeHjEQu7vv-H/view?usp=drive_link"
+              class="timeline-link" target="_blank" rel="noopener noreferrer" id="exp-link-lab">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                <polyline points="15 3 21 3 21 9" />
+                <line x1="10" x2="21" y1="14" y2="3" />
+              </svg>
+              Lihat Sertifikat
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Portfolio</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="projects-grid reveal">
+        <!-- Project 1 -->
+        <article class="project-card" data-project="wargaku">
+          <div class="project-image">
+            <div class="project-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round">
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
+                <path d="M12 18h.01" />
+              </svg>
+            </div>
+            <div class="project-overlay">
+              <span class="project-view">View Details</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="project-tag">Flutter</span>
+              <span class="project-tag">Mobile</span>
+              <span class="project-tag">Public Service</span>
+            </div>
+            <h3 class="project-title">Wargaku Surabaya V3</h3>
+            <p class="project-desc">
+              A public service mobile application for Surabaya citizens,
+              enabling easier access to city services and communication
+              with local government.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/varhan1" class="project-link" target="_blank" rel="noopener noreferrer"
+                id="proj-link-wargaku">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path
+                    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                  <path d="M9 18c-4.51 2-5-2-7-2" />
+                </svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- Project 2 -->
+        <article class="project-card" data-project="teacher-mis">
+          <div class="project-image">
+            <div class="project-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+            </div>
+            <div class="project-overlay">
+              <span class="project-view">View Details</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="project-tag">Laravel</span>
+              <span class="project-tag">Web App</span>
+              <span class="project-tag">Management</span>
+            </div>
+            <h3 class="project-title">Teacher Management Information System</h3>
+            <p class="project-desc">
+              A web-based information system designed to manage teacher data,
+              schedules, and administrative tasks efficiently within
+              an educational institution.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/varhan1" class="project-link" target="_blank" rel="noopener noreferrer"
+                id="proj-link-teacher">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path
+                    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                  <path d="M9 18c-4.51 2-5-2-7-2" />
+                </svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- Project 3 -->
+        <article class="project-card" data-project="infosehat">
+          <div class="project-image">
+            <div class="project-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+              </svg>
+            </div>
+            <div class="project-overlay">
+              <span class="project-view">View Details</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="project-tag">Mobile</span>
+              <span class="project-tag">Health</span>
+              <span class="project-tag">Information</span>
+            </div>
+            <h3 class="project-title">InfoSehat</h3>
+            <p class="project-desc">
+              A health information mobile application that provides users
+              with accessible health-related content, tips, and resources
+              to promote wellness awareness.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/varhan1" class="project-link" target="_blank" rel="noopener noreferrer"
+                id="proj-link-infosehat">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path
+                    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                  <path d="M9 18c-4.51 2-5-2-7-2" />
+                </svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION SECTION ===== -->
+  <section id="education" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Background</span>
+        <h2 class="section-title">Education</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="education-card reveal">
+        <div class="edu-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+            <path d="M6 12v5c3 3 8 3 12 0v-5" />
+          </svg>
+        </div>
+        <div class="edu-details">
+          <h3>Telkom University Surabaya</h3>
+          <p class="edu-degree">Bachelor of Information Systems</p>
+          <div class="edu-meta">
+            <span class="edu-gpa">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" class="edu-meta-icon">
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+              </svg>
+              GPA: 3.54 / 4.00
+            </span>
+          </div>
+          <a href="https://drive.google.com/file/d/1PPOxSr8VHrgRS6mYaT_KizLTrQBu-H0s/view?usp=drive_link"
+            target="_blank" rel="noopener noreferrer" class="edu-diploma-link">View Diploma</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY SECTION ===== -->
+  <section id="gallery" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Achievements</span>
+        <h2 class="section-title">Gallery</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="cert-filters reveal">
+        <button class="cert-filter-btn active" data-filter="all" id="cert-filter-all">All <span
+            class="cert-filter-count">10</span></button>
+        <button class="cert-filter-btn" data-filter="ai" id="cert-filter-ai">AI / ML <span
+            class="cert-filter-count">3</span></button>
+        <button class="cert-filter-btn" data-filter="cloud" id="cert-filter-cloud">Cloud <span
+            class="cert-filter-count">2</span></button>
+        <button class="cert-filter-btn" data-filter="iot" id="cert-filter-iot">IoT <span
+            class="cert-filter-count">1</span></button>
+        <button class="cert-filter-btn" data-filter="programming" id="cert-filter-programming">Programming <span
+            class="cert-filter-count">1</span></button>
+        <button class="cert-filter-btn" data-filter="language" id="cert-filter-language">Language <span
+            class="cert-filter-count">1</span></button>
+        <button class="cert-filter-btn" data-filter="other" id="cert-filter-other">Other <span
+            class="cert-filter-count">2</span></button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery-grid reveal" id="cert-grid">
+
+        <!-- 1. DQLab â€” AI/ML -->
+        <div class="gallery-item" data-category="ai" data-title="Guide to Learn R with AI"
+          data-issuer="DQLab Ã— Xeratic Ã— UMN" data-date="03 October 2024"
+          data-img="/images/certificate-DQLAB_Varhan-1.png">
+          <div class="gallery-img-wrap">
+            <img src="/images/certificate-DQLAB_Varhan-1.png" alt="Guide to Learn R with AI â€” DQLab" loading="lazy"
+              onerror="this.parentElement.classList.add('img-fallback')" />
+            <div class="gallery-overlay">
+              <span class="gallery-badge cert-badge-ai">AI / ML</span>
+              <button class="gallery-zoom-btn" aria-label="View fullsize">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <circle cx="11" cy="11" r="8" />
+                  <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                  <line x1="11" y1="8" x2="11" y2="14" />
+                  <line x1="8" y1="11" x2="14" y2="11" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="gallery-info">
+            <h3 class="gallery-title">Guide to Learn R with AI</h3>
+            <p class="gallery-issuer">DQLab Ã— Xeratic</p>
+            <span class="gallery-date">03 Oct 2024</span>
+          </div>
+        </div>
+
+        <!-- 2. Skilvul â€” IoT -->
+        <div class="gallery-item" data-category="iot" data-title="IoT â€” Building Health Monitoring System"
+          data-issuer="Skilvul" data-date="07 October 2025"
+          data-img="/images/Completion Certificate for Internet of Things (IoT) Project - Building Health Monitoring System-1.png">
+          <div class="gallery-img-wrap">
+            <img
+              src="/images/Completion Certificate for Internet of Things (IoT) Project - Building Health Monitoring System-1.png"
+              alt="IoT Health Monitoring â€” Skilvul" loading="lazy"
+              onerror="this.parentElement.classList.add('img-fallback')" />
+            <div class="gallery-overlay">
+              <span class="gallery-badge cert-badge-iot">IoT</span>
+              <button class="gallery-zoom-btn" aria-label="View fullsize">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <circle cx="11" cy="11" r="8" />
+                  <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                  <line x1="11" y1="8" x2="11" y2="14" />
+                  <line x1="8" y1="11" x2="14" y2="11" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="gallery-info">
+            <h3 class="gallery-title">IoT â€” Health Monitoring System</h3>
+            <p class="gallery-issuer">Skilvul</p>
+            <span class="gallery-date">07 Oct 2025</span>
+          </div>
+        </div>
+
+        <!-- 3. EPrT Telkom â€” Language -->
+        <div class="gallery-item" data-category="language" data-title="EPrT English Proficiency Test (Score: 437)"
+          data-issuer="Telkom University Language Center" data-date="10 April 2026" data-img="/images/eprt-1.png">
+          <div class="gallery-img-wrap">
+            <img src="/images/eprt-1.png" alt="EPrT English Proficiency â€” Telkom University" loading="lazy"
+              onerror="this.parentElement.classList.add('img-fallback')" />
+            <div class="gallery-overlay">
+              <span class="gallery-badge cert-badge-language">Language</span>
+              <button class="gallery-zoom-btn" aria-label="View fullsize">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <circle cx="11" cy="11" r="8" />
+                  <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                  <line x1="11" y1="8" x2="11" y2="14" />
+                  <line x1="8" y1="11" x2="14" y2="11" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="gallery-info">
+            <h3 class="gallery-title">EPrT English Proficiency (Score: 437)</h3>
+            <p class="gallery-issuer">Telkom University</p>
+            <span class="gallery-date">10 Apr 2026</span>
+          </div>
+        </div>
+
+        <!-- 4. Azure AI â€” Cloud -->
+        <div class="gallery-item" data-category="cloud" data-title="Azure AI Fundamentals (AI-900)"
+          data-issuer="Microsoft Ã— Komdigi Ã— Mereka" data-date="08 October 2025"
+          data-img="/images/generate-pdf-1.png">
+          <div class="gallery-img-wrap">
+            <img src="/images/generate-pdf-1.png" alt="Azure AI Fundamentals AI-900 â€” Microsoft" loading="lazy"
+              onerror="this.parentElement.classList.add('img-fallback')" />
+            <div class="gallery-overlay">
+              <span class="gallery-badge cert-badge-cloud">Cloud</span>
+              <button class="gallery-zoom-btn" aria-label="View fullsize">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <circle cx="11" cy="11" r="8" />
+                  <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                  <line x1="11" y1="8" x2="11" y2="14" />
+                  <line x1="8" y1="11" x2="14" y2="11" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="gallery-info">
+            <h3 class="gallery-title">Azure AI Fundamentals (AI-900)</h3>
+            <p class="gallery-issuer">Microsoft Ã— Komdigi</p>
+            <span class="gallery-date">08 Oct 2025</span>
+          </div>
+        </div>
+
+        <!-- 5. Huawei Python â€” Programming -->
+        <div class="gallery-item" data-category="programming" data-title="Python Programming Basics"
+          data-issuer="Huawei ICT Academy" data-date="05 November 2025" data-img="/images/SERTIFIKASI HUAWEI (1)-1.png">
+          <div class="gallery-img-wrap">
+            <img src="/images/SERTIFIKASI HUAWEI (1)-1.png" alt="Python Programming Basics â€” Huawei ICT"
+              loading="lazy" onerror="this.parentElement.classList.add('img-fallback')" />
+            <div class="gallery-overlay">
+              <span class="gallery-badge cert-badge-programming">Programming</span>
+              <button class="gallery-zoom-btn" aria-label="View fullsize">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <circle cx="11" cy="11" r="8" />
+                  <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                  <line x1="11" y1="8" x2="11" y2="14" />
+                  <line x1="8" y1="11" x2="14" y2="11" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="gallery-info">
+            <h3 class="gallery-title">Python Programming Basics</h3>
+            <p class="gallery-issuer">Huawei ICT Academy</p>
+            <span class="gallery-date">05 Nov 2025</span>
+          </div>
+        </div>
+
+        <!-- 6. Komdigi DTS â€” Cloud -->
+        <div class="gallery-item" data-category="cloud"
+          data-title="Introduction to Cloud Computing â€” Digital Talent Scholarship 2025"
+          data-issuer="Komdigi / Digital Talent Scholarship" data-date="04 November 2025"
+          data-img="/images/Sertifikat pelatihan Digitalent (1)-1.png">
+          <div class="gallery-img-wrap">
+            <img src="/images/Sertifikat pelatihan Digitalent (1)-1.png" alt="Intro to Cloud Computing â€” Komdigi DTS"
+              loading="lazy" onerror="this.parentElement.classList.add('img-fallback')" />
+            <div class="gallery-overlay">
+              <span class="gallery-badge cert-badge-cloud">Cloud</span>
+              <button class="gallery-zoom-btn" aria-label="View fullsize">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <circle cx="11" cy="11" r="8" />
+                  <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                  <line x1="11" y1="8" x2="11" y2="14" />
+                  <line x1="8" y1="11" x2="14" y2="11" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="gallery-info">
+            <h3 class="gallery-title">Introduction to Cloud Computing â€” DTS 2025</h3>
+            <p class="gallery-issuer">Komdigi / Digital Talent Scholarship</p>
+            <span class="gallery-date">04 Nov 2025</span>
+          </div>
+        </div>
+
+        <!-- 7. HMSI Mentor Other -->
+        <div class="gallery-item" data-category="other" data-title="Mentor  Kaderisasi P2SI Anagata Amerta"
+          data-issuer="HMSI Telkom University Surabaya" data-date="24 Apr â€“ 24 Jun 2024"
+          data-img="/images/Sertifikat Mentor.Varhan Fiqih Naufaldy-1.png">
+          <div class="gallery-img-wrap">
+            <img src="/images/Sertifikat Mentor.Varhan Fiqih Naufaldy-1.png" alt="Mentor Kaderisasi P2SI â€” HMSI TUS"
+              loading="lazy" onerror="this.parentElement.classList.add('img-fallback')" />
+            <div class="gallery-overlay">
+              <span class="gallery-badge cert-badge-other">Organization</span>
+              <button class="gallery-zoom-btn" aria-label="View fullsize">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <circle cx="11" cy="11" r="8" />
+                  <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                  <line x1="11" y1="8" x2="11" y2="14" />
+                  <line x1="8" y1="11" x2="14" y2="11" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="gallery-info">
+            <h3 class="gallery-title">Mentor â€” Kaderisasi P2SI Anagata Amerta</h3>
+            <p class="gallery-issuer">HMSI Telkom University Surabaya</p>
+            <span class="gallery-date">Apr â€“ Jun 2024</span>
+          </div>
+        </div>
+
+        <!-- 8. Dicoding AI  AI/ML -->
+        <div class="gallery-item" data-category="ai" data-title="Belajar Dasar AI" data-issuer="Dicoding Indonesia"
+          data-date="01 Oktober 2025" data-img="/images/sertifikat_course_653_5272208_011025221623-1.png">
+          <div class="gallery-img-wrap">
+            <img src="/images/sertifikat_course_653_5272208_011025221623-1.png" alt="Belajar Dasar AI Dicoding"
+              loading="lazy" onerror="this.parentElement.classList.add('img-fallback')" />
+            <div class="gallery-overlay">
+              <span class="gallery-badge cert-badge-ai">AI / ML</span>
+              <button class="gallery-zoom-btn" aria-label="View fullsize">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <circle cx="11" cy="11" r="8" />
+                  <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                  <line x1="11" y1="8" x2="11" y2="14" />
+                  <line x1="8" y1="11" x2="14" y2="11" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="gallery-info">
+            <h3 class="gallery-title">Belajar Dasar AI</h3>
+            <p class="gallery-issuer">Dicoding Indonesia</p>
+            <span class="gallery-date">01 Oct 2025</span>
+          </div>
+        </div>
+
+        <!-- 9. Webinar Ketua Pelaksana Other -->
+        <div class="gallery-item" data-category="other"
+          data-title="Ketua Pelaksana Webinar Career Development Tingkat Nasional"
+          data-issuer="HMSI TUS Ã— Career Development Center" data-date="26 April 2025"
+          data-img="/images/Varhan Fiqih Naufaldy_compressed Webinar April-1.png">
+          <div class="gallery-img-wrap">
+            <img src="/images/Varhan Fiqih Naufaldy_compressed Webinar April-1.png"
+              alt="Ketua Pelaksana Webinar â€” HMSI TUS" loading="lazy"
+              onerror="this.parentElement.classList.add('img-fallback')" />
+            <div class="gallery-overlay">
+              <span class="gallery-badge cert-badge-other">Organization</span>
+              <button class="gallery-zoom-btn" aria-label="View fullsize">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <circle cx="11" cy="11" r="8" />
+                  <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                  <line x1="11" y1="8" x2="11" y2="14" />
+                  <line x1="8" y1="11" x2="14" y2="11" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="gallery-info">
+            <h3 class="gallery-title">Ketua Pelaksana â€” Webinar Career Dev.</h3>
+            <p class="gallery-issuer">HMSI TUS Ã— Career Dev. Center</p>
+            <span class="gallery-date">26 Apr 2025</span>
+          </div>
+        </div>
+
+        <!-- 10. SAP / Edugate â€” AI/ML -->
+        <div class="gallery-item" data-category="ai"
+          data-title="HR050 â€” Business Processes in Human Capital Management"
+          data-issuer="SAP University Partnership / Edugate" data-date="03 June 2024" data-img="/images/SAP-1.png">
+          <div class="gallery-img-wrap">
+            <img src="/images/SAP-1.png" alt="SAP HR050 â€” Edugate" loading="lazy"
+              onerror="this.parentElement.classList.add('img-fallback')" />
+            <div class="gallery-overlay">
+              <span class="gallery-badge cert-badge-ai">AI / ML</span>
+              <button class="gallery-zoom-btn" aria-label="View fullsize">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <circle cx="11" cy="11" r="8" />
+                  <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                  <line x1="11" y1="8" x2="11" y2="14" />
+                  <line x1="8" y1="11" x2="14" y2="11" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="gallery-info">
+            <h3 class="gallery-title">SAP HR050 â€” Human Capital Management</h3>
+            <p class="gallery-issuer">SAP University Partnership</p>
+            <span class="gallery-date">03 Jun 2024</span>
+          </div>
+        </div>
+        <!-- 11. Tugas AkhirSAP / Edugate â€” AI/ML -->
+        <div class="gallery-item" data-category="ai" data-title="Presentasi Objek Tugas Akhir"
+          data-issuer="Presentasi Objek Tugas Akhir" data-date="03 June 2024" data-img="/images/TUGAS AKHIR.jpeg">
+          <div class="gallery-img-wrap">
+            <img src="/images/TUGAS AKHIR.jpeg" alt="SAP HR050 â€” Edugate" loading="lazy"
+              onerror="this.parentElement.classList.add('img-fallback')" />
+            <div class="gallery-overlay">
+              <span class="gallery-badge cert-badge-ai">AI / ML</span>
+              <button class="gallery-zoom-btn" aria-label="View fullsize">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <circle cx="11" cy="11" r="8" />
+                  <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                  <line x1="11" y1="8" x2="11" y2="14" />
+                  <line x1="8" y1="11" x2="14" y2="11" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="gallery-info">
+            <h3 class="gallery-title">Presentasi Tugas AKhir</h3>
+            <p class="gallery-issuer">SMPN 8 PASURUAN</p>
+            <span class="gallery-date">03 Jun 2024</span>
+          </div>
+
+        </div>
+        <!-- 11. KP / Edugate â€” AI/ML -->
+        <div class="gallery-item" data-category="ai" data-title="Foto Bersama KP"
+          data-issuer="Foto Bersama Dengan Mitra" data-date="25 Agustus 2025" data-img="/images/KP.jpeg">
+          <div class="gallery-img-wrap">
+            <img src="/images/KP.jpeg" alt="SAP HR050 â€” Edugate" loading="lazy"
+              onerror="this.parentElement.classList.add('img-fallback')" />
+            <div class="gallery-overlay">
+              <span class="gallery-badge cert-badge-ai">AI / ML</span>
+              <button class="gallery-zoom-btn" aria-label="View fullsize">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <circle cx="11" cy="11" r="8" />
+                  <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                  <line x1="11" y1="8" x2="11" y2="14" />
+                  <line x1="8" y1="11" x2="14" y2="11" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="gallery-info">
+            <h3 class="gallery-title">Dokumentasi Magang (KP) </h3>
+            <p class="gallery-issuer">Diskominfo Surabaya</p>
+            <span class="gallery-date">03 Jun 2024</span>
+          </div>
+        </div>
+
+  </section>
+
+  <!-- ===== LIGHTBOX MODAL ===== -->
+  <div id="gallery-lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Certificate viewer">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+        stroke-linejoin="round">
+        <line x1="18" y1="6" x2="6" y2="18" />
+        <line x1="6" y1="6" x2="18" y2="18" />
+      </svg>
+    </button>
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="" />
+      <div class="lightbox-meta">
+        <h3 id="lightbox-title"></h3>
+        <p id="lightbox-issuer"></p>
+        <span id="lightbox-date"></span>
+      </div>
+    </div>
+    <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Previous">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+        stroke-linejoin="round">
+        <polyline points="15 18 9 12 15 6" />
+      </svg>
+    </button>
+    <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Next">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+        stroke-linejoin="round">
+        <polyline points="9 18 15 12 9 6" />
+      </svg>
+    </button>
+  </div>
+
+
+
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Get in Touch</span>
+        <h2 class="section-title">Contact Me</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-grid reveal">
+        <div class="contact-info">
+          <p class="contact-intro">
+            Interested in working together or have a question?
+            Feel free to reach out through any of the channels below
+            or use the contact form.
+          </p>
+          <div class="contact-channels">
+            <a href="mailto:varhanfiqih25@gmail.com" class="contact-channel" id="contact-email">
+              <div class="channel-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <rect width="20" height="16" x="2" y="4" rx="2" />
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                </svg>
+              </div>
+              <div class="channel-text">
+                <span class="channel-label">Email</span>
+                <span class="channel-value">varhanfiqih25@gmail.com</span>
+              </div>
+            </a>
+            <a href="https://linkedin.com/in/" class="contact-channel" target="_blank" rel="noopener noreferrer"
+              id="contact-linkedin">
+              <div class="channel-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                  <rect width="4" height="12" x="2" y="9" />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
+              </div>
+              <div class="channel-text">
+                <span class="channel-label">LinkedIn</span>
+                <span class="channel-value">linkedin.com/in/varhan-fiqih</span>
+              </div>
+            </a>
+            <a href="https://www.github.com/varhan1" class="contact-channel" target="_blank" rel="noopener noreferrer"
+              id="contact-github">
+              <div class="channel-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path
+                    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                  <path d="M9 18c-4.51 2-5-2-7-2" />
+                </svg>
+              </div>
+              <div class="channel-text">
+                <span class="channel-label">GitHub</span>
+                <span class="channel-value">github.com/varhan1</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="form-group">
+            <label for="form-name" class="form-label">Full Name</label>
+            <input type="text" id="form-name" name="name" class="form-input" placeholder="John Doe" required
+              autocomplete="name" />
+            <span class="form-error" id="error-name"></span>
+          </div>
+          <div class="form-group">
+            <label for="form-email" class="form-label">Email Address</label>
+            <input type="email" id="form-email" name="email" class="form-input" placeholder="john@example.com" required
+              autocomplete="email" />
+            <span class="form-error" id="error-email"></span>
+          </div>
+          <div class="form-group">
+            <label for="form-subject" class="form-label">Subject</label>
+            <input type="text" id="form-subject" name="subject" class="form-input" placeholder="Project Inquiry"
+              required />
+            <span class="form-error" id="error-subject"></span>
+          </div>
+          <div class="form-group">
+            <label for="form-message" class="form-label">Message</label>
+            <textarea id="form-message" name="message" class="form-input form-textarea"
+              placeholder="Tell me about your project..." rows="5" required></textarea>
+            <span class="form-error" id="error-message"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-submit" id="btn-contact-submit">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="m22 2-7 20-4-9-9-4Z" />
+              <path d="M22 2 11 13" />
+            </svg>
+            Send Message
+          </button>
+          <p class="form-note">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" class="form-note-icon">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M12 16v-4" />
+              <path d="M12 8h.01" />
+            </svg>
+            This form is for demonstration purposes. No backend is connected yet.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <a href="#hero" class="footer-logo">VARHAN</a>
+        <p class="footer-text">
+          Designed & Built by Varhan Fiqih Naufaldy
+        </p>
+        <p class="footer-copyright">
+          &copy; <span id="footer-year"></span> All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== BACK TO TOP ===== -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+      stroke-linejoin="round">
+      <path d="m18 15-6-6-6 6" />
+    </svg>
+  </button>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
